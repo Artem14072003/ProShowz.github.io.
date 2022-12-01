@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="viewport" type="width = device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="shortcut icon" href="./../../img/favicons/favicon.ico" type="image/x-icon">
+    <script src="./../js/script.js" defer></script>
+    <title>ProShowz</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo">
+                <div class="header__logo icons">
+                    <a href="./index.html"><img src="./../img/logo/LOGO.JPG" alt="" srcset=""></a>
+                </div>
+                <div class="text"><a href="./index.html">ProShowz</a></div> 
+
+                </div>                
+                <div class="navber-nav">
+                    <ul class="navbr-nav__ul">
+                        <li class="nav-link active"><a href="./index.html" class="nav-link">Home</a></li>
+                        <li class="nav-link"><a href="./about.html" class="nav-link">About</a></li>
+                        <li class="nav-link"><a href="./Genre.html" class="nav-link">Genre</a></li>
+                        <li class="nav-link"><a href="./Plans.html" class="nav-link">Plans</a></li>
+                        <li class="nav-link"><a href="./Blog.html" class="nav-link">Blog</a></li>
+                        <li class="nav-link"><a href="./Contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+
+                    <a href="#search" class="btn" title="search">Search <span class="fa fa-search ml-3" aria-hidden="true"></span></a>
+                </div>            
+                <div class="menu__byrger">
+                    <span></span>
+                </div>   
+        </header>
+
+        <main class="main">
+            <div class="contener">
+                <h1 class="film">Фильмы</h1>
+                <div class="filter">
+                    <a href="#search" class="btn_filter" title="search">Фильтр<span class="fa fa-search ml-3" aria-hidden="true"></span></a>   
+                </div>
+            </div>
+            <div class="filter_bg">
+                <div class="cataloge">
+                    <div class="filter_nav">
+                        <aside class="grey-box">
+                            <form class ="form" action="#">
+                                <div>
+                                <label for="genres">Жанры</label>
+                                    <select name="genres" id="genres">
+                                        <option value hidden></option>
+                                        <option>комедия</option>
+                                        <option>мультфильм</option>
+                                        <option>военный</option>
+                                        <option>фантастика</option>
+                                        <option>фэнтези</option>
+                                        <option>история</option>
+                                        <option>ужасы</option>
+                                        <option>катастрофы</option>
+                                        <option>боевик</option>
+                                        <option>документальный</option>
+                                        <option>драма</option>
+                                    </select>
+                                </div>
+                                <div class="age">
+                                    <label for="age">Возрастные ограничения</label>
+                                    <select name="age" id="age">
+                                        <option value hidden></option>
+                                        <option>0+</option>
+                                        <option>6+</option>
+                                        <option>12+</option>
+                                        <option>16+</option>
+                                        <option>18+</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="year">Год выпуска</label>
+                                    <select name="year" id="year">
+                                        <option value hidden></option>
+                                        <option>1979-2010</option>
+                                        <option>2010-2020</option>
+                                        <option>2020-2023</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="rate">Рейтинг</label>
+                                    <select name="rate" id="rate">
+                                        <option value hidden></option>
+                                        <option>По возрастанию</option>
+                                        <option>По убыванию</option>
+                                    </select>
+                                </div>
+                                <div class="button">
+                                    <button type="reset">Сброс</button>
+                                </div>
+                            </form>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+            <div class="card_wrapper">
+                
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="contener__footer">
+                <div class="Movies__foter">
+                    <h2>Movies</h2>
+                    <ul>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">English Movies</a></li>
+                        <li><a href="#">Tailor</a></li>
+                        <li><a href="#">Upcoming Movies</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="Movies__foter">
+                    <h2>Information</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Tv Series Movies</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="Movies__foter">
+                    <h2>Locations</h2>
+                    <ul>
+                        <li><a href="#">Asia</a></li>
+                        <li><a href="#">France</a></li>
+                        <li><a href="#">Taiwan</a></li>
+                        <li><a href="#">United States</a></li>
+                        <li><a href="#">Korea</a></li>
+                        <li><a href="#">United Kingdom</a></li>
+                    </ul>
+                </div>
+                <div class="Movies__foter">
+                    <h2>Newsletter</h2>
+                    <form action="#" class="subscribe mb-3" method="post">
+                        <input type="email" name="email" placeholder="Your Email Address" required="">
+                        <button><span class="fa fa-envelope-o"></span></button>
+                    </form>
+                    <p>Enter your email and receive the latest news, updates and special offers from us.</p>
+                </div>
+            </div>        
+        </footer>
+    </div>
+
+    <script src="./../js/filter.js"></script>
+</body>
+</html>

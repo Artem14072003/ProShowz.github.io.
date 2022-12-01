@@ -1,0 +1,311 @@
+
+/* Подключаем шрифры и нормалайз css */
+@import url(./normalize/normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+/* Прописываем шрифты в bady, так же цвет фона и цвет текста */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(171deg, #121212,#181818);
+    background: -webkit-linear-gradient(171deg, #121212,#181818);
+    color: #888;
+}
+
+/* HEADER */
+header {
+    background-color: #0c0f0a;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 200px ;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    font-size: 26px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+.text > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navber-nav{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    gap: 20px;
+}
+.navbr-nav__ul{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    gap: 20px;
+}
+
+.nav-link{
+    background: none;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    line-height: 28px;
+    transition: color 0.4s ease-in-out;
+}
+
+a.btn{
+    position: relative;
+    border: 1px solid #df0e62;
+    background: #df0e62;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 34px 10px 16px;
+    transition: all 0.4s ease-in-out;
+
+}
+
+
+a.nav-link:hover{
+    color: #df0e62;
+}
+
+.active > a{
+    color: #df0e62;
+}
+
+a.btn::before{
+    content: "";
+    position: absolute;
+    left: 75px;
+    top: 11px;
+    width: 16px;
+    height: 16px;
+    background-image: url(./../img/search/search-13-16.ico);
+    background-repeat: no-repeat;
+}
+
+a.btn:hover{
+    border: 1px solid #127681;
+    background-color: #127681;
+}
+
+.menu__byrger{
+    display: none;
+}
+
+/* MAiN */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 250px 0;
+}
+
+main > img{
+    width: 400px;
+    height: auto;
+}
+/* FOOTER */
+footer {
+    margin-top: 50px;
+    background-color: #222;
+    color: #fff;
+}
+
+.contener__footer {
+    display: flex;
+    column-gap: 70px;
+    justify-content: center;
+    background-color: #0c0f0a;
+    padding: 10px 270px 0 230px;
+}
+
+.Movies__foter > h2{
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: capitalize;
+    margin-bottom: 28px;
+}
+
+.Movies__foter > p{
+    width: 265px;
+    line-height: 26px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #888;
+}
+
+.Movies__foter > ul > li{
+    list-style-type: none;
+    margin: 0 0 10px 0;
+}
+
+.Movies__foter > ul{
+    padding: 0;
+}
+
+.Movies__foter > ul > li > a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #888;
+    transition: color 0.4s ease-in-out;
+}
+
+.Movies__foter ul li a:hover{
+    color: #df0e62;
+}
+
+form.subscribe {
+    display: flex;
+    position: relative;
+}
+
+.subscribe input[type="email"] {
+    background: transparent;
+    padding: 15px 20px;
+    font-size: 17px;
+    line-height: 26px;
+    border: 1px solid #222;
+    outline: none;
+    width: 265px;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.subscribe input[type="email"]:focus{
+    border: 1px solid #df0e62;
+    color: #888;
+}
+
+.subscribe button {
+    text-align: center;
+    background: transparent;
+    padding-left: 0;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    padding: 15px 0px;
+    right: 20px;
+    top: 1px;
+}
+
+.subscribe button::before {
+    content: "";
+    position: absolute;
+    right: 1px;
+    bottom: 16px;
+    width: 30px;
+    height: 30px;
+    background: url(./../../img/mail/mail_email_message_envelope_icon_131245.svg);
+}
+
+
+@media (max-width:1388px) {
+    .contener__footer {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 250px);
+        row-gap: 25px;
+        justify-content: center;
+        text-align: center;
+    }
+    .subscribe input[type="email"] {
+        margin-left: 14px;
+    }
+}
+
+@media (max-width:1120px) {
+    .header{
+        padding: 10px 100px;
+    }
+}
+
+@media (max-width:930px) {
+    .header{
+        padding: 10px 50px;
+    }
+}
+
+@media (max-width:840px) {
+    main .contener{
+        flex-direction: column;
+        row-gap: 25px;
+    }
+    main .btn_filter{
+        margin-bottom: 25px;
+    }
+    .navber-nav{
+        display: none;
+    }
+
+    .header{
+        align-items: center;
+    }
+
+    .menu__byrger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        /* border: 3px solid #fff; */
+    }
+
+    .menu__byrger::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        background-color: #fff;
+        border-radius: 20px;
+        bottom: 0;
+        left: 0;
+    }
+
+    .menu__byrger  span {
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        border-radius: 20px;
+        left: 0;
+        top: 12px;
+        background-color: #fff;
+        
+    }
+
+    .menu__byrger::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        border-radius: 20px;
+        background-color: #fff;
+        top: 0;
+        left: 0;
+    }
+
+    .filter_bg::after{
+        content: "";
+        right: 148px;
+    }
+    
+}
